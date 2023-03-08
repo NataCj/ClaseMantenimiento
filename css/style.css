@@ -1,10 +1,17 @@
-body{
+/* body{
     background-color: rgb(220, 255, 255);
-}
-img{
+} */
+/* img{
     width: 40%;
     height: 50%;
-}
+} */
 h1{
     color: blue;
+}
+img{
+    width: 250px;/* Ancho de la imagen */
+    height: 250px;
+}
+tr:hover{
+    background-color: rgb(90, 0, 173);
 }
