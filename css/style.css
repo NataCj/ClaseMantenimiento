@@ -15,3 +15,16 @@ img{
 tr:hover{
     background-color: rgb(90, 0, 173);
 }
+
+input{
+    border-radius: 3px;
+    border: 3px solid rgb(73, 23, 255);
+    background-color: rgb(205, 173, 236);
+}
+.inputcolor{
+    background-color: rgb(196, 107, 255);
+}
+#contraseña{
+    background-color: rgb(143, 160, 255);
+    color: rgb(52, 55, 255);
+}
