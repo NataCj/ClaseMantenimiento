@@ -1,12 +1,20 @@
-/* body{
-    background-color: rgb(220, 255, 255);
-} */
+body{
+    CSS
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,67,222,1) 32%, rgba(164,151,240,1) 64%, rgba(195,184,251,1) 100%);
+
+}
+a{
+    color: white;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 /* img{
     width: 40%;
     height: 50%;
 } */
 h1{
-    color: blue;
+    color: rgb(255, 255, 255);
 }
 img{
     width: 250px;/* Ancho de la imagen */
