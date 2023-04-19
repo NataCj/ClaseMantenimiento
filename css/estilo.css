@@ -108,6 +108,96 @@ nav{
 
 }
 
+/* ########## Education ################# */
+.content-education{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px ;
+    justify-content: space-around;
+    background-color: #bdd1fa;
+
+
+}
+.title{
+    width: 100%;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.education{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+.education:hover{
+    box-shadow: 0px 0px 20px gray;
+    transition: all ease-in-out .5s;
+}
+.education a{
+    text-decoration: none;
+    font-size: 12px;
+    color:#5d6678;
+
+}
+.education a:hover{
+    color: #00011b;
+}
+.education i{
+    color: #242543;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 2px solid  #242543 ;
+    width: 50px;
+    height: 50px;
+    line-height: 44px;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* ###### CERTIFICADOS ######## */
+.content-certificados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+.certificado{
+    background-color: #bdd1fa;
+    border: 1px solid #242543;
+    border-radius: 5px;
+    width: 22%;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+
+}
+.certificado img{
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.certificado a{
+    color: gray;
+    font-size: 12px;
+    text-decoration: none;
+}
+.certificado a:hover{
+    color: #fff;
+
+}
+.certificado:hover{
+    background-color: #00011b;
+    color: #fff;
+    transition: all ease-in-out .5s;
+}
+
+
+
 /* ##### FOOTER ###### */
 footer{
     background:  #33345c;
@@ -197,3 +287,4 @@ footer{
     background-color: #242543;
     border-color: #242543;
 }
+
