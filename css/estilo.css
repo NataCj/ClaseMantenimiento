@@ -49,6 +49,7 @@ nav{
     margin-left: 20px;
     padding: 12px;
     border-radius: 10px;
+    background-color: #fff;
 }
 .nav .enlaces-header a:hover{
     color: #fff;
@@ -333,12 +334,12 @@ footer{
 
 }
 .nav .enlaces-header a{
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     font-weight: 800;
     margin-top: 20px;
     width: 50%;
-    background-color:#3b3c66 ;
+    background: transparent;
 }
 .nav .enlaces-header a:hover{
     color:#00011b;
