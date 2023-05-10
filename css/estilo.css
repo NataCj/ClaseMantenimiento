@@ -42,6 +42,7 @@ nav{
 .enlaces-header{
     font-weight: 300;
     margin: auto;
+    transition: all ease-in-out .6s;
 }
 .nav .enlaces-header a{
     color: #5d6678;
@@ -91,6 +92,7 @@ nav{
     height: 300px;
     margin-left: 50px;
     animation: ease-in animacion 0.5s;
+    border-radius: 50%;
 }
 .textos-header{
     margin: 0 0 0 30px;
@@ -312,6 +314,7 @@ footer{
 /*############ BREAKPOINT ########### */
 
 @media screen and (max-width:700px) {
+    /*#### Barra de menu hamburguesa ####*/
     .hamburguer{
         display: block;
     }
@@ -328,7 +331,7 @@ footer{
         align-items: center;
         clip-path: circle(0.0% at 0 0);
     }
-}
+
 .nav .hamburgueropen{
     clip-path: circle(150% at 0 0);
 
@@ -339,10 +342,47 @@ footer{
     font-weight: 800;
     margin-top: 20px;
     width: 50%;
-    background: transparent;
+    background:#5d5e96
 }
 .nav .enlaces-header a:hover{
     color:#00011b;
-    background-color:#5d6678;
+    background-color:#e6e4ff;
 }
 /* media query */
+
+/* la visual principal */
+h1{
+    font-size: 30px;
+}
+.contenido-header{
+    width: 100%;
+    height: 580px;
+    display: block;
+}
+.contenido-header > img{
+    width: 120px;
+    height: 120px;
+    animation: ease-in animacion 0.5s;
+    margin:20px;
+    border-radius: 50%;
+}
+.contenido-header>img, .textos-header{
+    margin-left: 0px;
+}
+
+/*##Educacion##*/
+.education, .certificado, .partFooter{
+    width: 80%;
+    margin-bottom: 15px;
+}
+.certificado  img{
+    height: 130px;
+}
+/* ### FOOTER ###*/
+.partFooter img{
+    display: none;
+}
+footer{
+    padding: 0px;
+}
+}

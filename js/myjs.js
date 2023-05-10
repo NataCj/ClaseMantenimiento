@@ -18,3 +18,5 @@ document.querySelectorAll(".enlaces-header")[0].addEventListener("click" , funct
     enlaces_header.classList.toggle("hamburgueropen");
     document.querySelectorAll(".hamburguer")[0].style.color="#000";  // toogle= true y false 
 })
+
+
