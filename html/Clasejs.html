@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #cambiar_fondo{
+        background-color: aqua;
+        text-transform: uppercase;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #cambiar_fondo:hover{
+        box-shadow: 0px 0px 15px black;
+    }
+    </style>
+</head>
+<body id="contenedor">
+    <h1>Nata</h1>
+
+    <input type="text" id="variable">
+    <button onclick="name_function()" id="name_event">TRANSFORMAR</button> 
+    <!--  -->
+    <h1 id="titulo"></h1>
+
+    <p id="cambiar_fondo">cambiar fondo</p>
+
+    <script>
+        // alert("Hola mundo");
+        console.log("ingresa");
+        //Variables
+        const nameuno = "Esto es cualquier cosa"; //variable que no cambia en el tiempo
+        var name_dos = "Esto es cualquier cosa";  // variables globales durante todo el proyecto
+        let nameTres = "Esto es cualquier cosa"; // Trabajar por bloques, algo en especifico en una funcion
+        // "\n"
+        console.log(nameuno + "\n" + name_dos + "\n" + nameTres);
+
+
+    //tipos de datos
+    let num_a = 10;
+    let num_b = 5.5;
+    let boolean = false;
+    let stringvar = "mi nombre es: ";
+    let arraynum = [1,2,3,4,5,"6","7","8"];
+    let dias_semana = ["lunes","martes","miercoles","Jueves","Viernes"];
+    let users = [
+        {name: "Natalia", last_name: "Cardenas", age:20},
+        {name: "Paula", last_name: "Garcia", age:18},
+        {name: "Breiner", last_name: "Cardenas", age:12}
+    ]
+    //Operadores aritmetricos + - / * % 
+    let suma = num_a + num_b;
+    let resta = num_a - num_b;
+    let division = num_a / num_b;
+    let multiplicacion= num_a * num_b;
+    let module = num_a % num_b;
+    let expo =num_a ^ num_b;
+    console.log(suma);
+    suma = Math.round(suma);
+    console.log("Suma= " + suma + "\nresta= " +resta);
+
+    //Operadores de comparacion / == / === / <> / >= / <= / > / <
+    //OPERACIONES LOGICOS AND && / OR || / ! negacion,diferente,contrario
+    console.log(boolean + " -- " + !boolean)
+     
+    // Estructura condicionales if / else / else if / switch (break)
+    // Estructura respetitivas for / while / do while
+
+    let long_nameuno = nameuno.length;
+    console.log(long_nameuno);
+
+    if(long_nameuno >= 22){
+       let  name_minus =nameuno.toLowerCase();
+        console.log(name_minus);
+        console.log(dias_semana[0]);
+        console.log(users[0].name);
+    }else{
+        console.log("No tiene la longitud")
+    }
+
+    for(let i=0; i<dias_semana.length; i++){
+        console.log(dias_semana[i])
+    }
+
+    //FUNCIONES
+
+    function name_function(){
+        // alert ("Funciona");
+        let variable = document.getElementById('variable').value;
+        variable = variable.toUpperCase();
+        document.getElementById("titulo").innerText = variable;
+        document.getElementById("titulo").style.color = "green";
+    }
+
+    document.getElementById("name_event").addEventListener("dblclick", function(){
+        // alert("hi");
+        let variable = document.getElementById('variable').value;
+        document.getElementById("titulo").style.background = "blue";
+    });
+
+    document.getElementById("cambiar_fondo").addEventListener("mouseover" , function(){
+        document.getElementById("contenedor").style.background = "blue";
+
+    })
+    
+    </script>
+</body>
+</html>
