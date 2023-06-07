@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(240, 227, 247);
+            color: aliceblue;
+        }
+        #form{
+            background-color:rgb(148, 54, 224);
+            display: block;
+            border-radius: 5px;
+            width: 20%;
+            padding: 25px;
+            margin: auto;
+            margin-top: 10%;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .grupo{
+            margin: 5px;
+        }
+        .enviar{
+            margin-top: 5px;
+            background-color: rgb(114, 81, 231);
+            border-radius: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form" autocomplete="off">
+        <h1>REGISTRO</h1>
+        <div class="grupo">
+            <label for="">Name: </label>
+            <input type="text" id="name">
+        </div>
+        <div class="grupo">
+            <label for="">Email: </label>
+            <input type="email" id="email">
+        </div>
+        <div class="grupo">
+            <label for="">Password: </label>
+            <input type="password" id="password">
+        </div>
+        <button class="enviar" type="submit" id="enviar">ENVIAR</button>
+        <p id="espacioinfo"></p>
+    </form>
+    <script>
+        const form = document.getElementById("form");
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const espacioinfo = document.getElementById("espacioinfo");
+        form.addEventListener("submit", evento=>{
+            evento.preventDefault();
+            let emailval = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            let info = "";
+            let verificar = false;
+            if(name.value.length < 2){
+                info += ("El nombre debe ser mayor a dos caracteres<br>");
+                verificar = true;
+            }
+            console.log(emailval.test(email.value));
+            if(!emailval.test(email.value)){
+                info += ("El email es incorrecto<br>");
+                verificar = true;
+            }
+            if(password.value.length < 8){
+                info += ("La contraseña debe tener 8 o mas caracteres<br>");
+                verificar = true;
+            }
+            
+            if(verificar){
+                espacioinfo.innerHTML = info; //innerHtml 
+            }else{
+                espacioinfo.innerHTML = "Enviado con exito";
+            }
+        })
+
+    </script>
+</body>
+</html>
